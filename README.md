@@ -53,13 +53,6 @@ Git Remotes
 Git Branches select origin/Admin
 click checkout
 
-to change status of admin
-
-rails dbconsole
-
-UPDATE users SET admin = 'false' WHERE email = 'admin@email.ie';
-
-UPDATE users SET admin = 'true' WHERE email = 'admin@email.ie';
 
 cd into project
 
@@ -76,3 +69,11 @@ login as A@B.C password password
 logout
 
 login as admin@email.ie password password
+
+to change status of admin
+
+rails dbconsole
+
+UPDATE users SET admin = 'false' WHERE email = 'admin@email.ie';
+
+UPDATE users SET admin = 'true' WHERE email = 'admin@email.ie';
