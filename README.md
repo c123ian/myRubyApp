@@ -40,4 +40,31 @@ cp app/assets/backup/development.sqlite3 db/
 
 refresh browser and catalog should have items.
 
-Click on Git menu on navbar and select Delete Repository.
+Admin functionality available on Branch Admin
+
+in the workspaces page click + in the action column of selected workspace
+
+click + add project
+
+select git and add url https://github.com/2davecollins/golf.git
+
+Git Remotes
+
+Git Branches select origin/Admin
+click checkout
+
+cd into project
+
+bundle install
+
+rake db:migrate
+
+run project
+
+cp app/assets/backup/db_with_users/development.sqlite3 db/
+
+login as A@B.C password password
+
+logout
+
+login as admin@email.ie password password
