@@ -77,3 +77,5 @@ rails dbconsole
 UPDATE users SET admin = 'false' WHERE email = 'admin@email.ie';
 
 UPDATE users SET admin = 'true' WHERE email = 'admin@email.ie';
+
+added for test
