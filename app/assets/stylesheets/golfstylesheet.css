@@ -6,7 +6,8 @@
 } */
 
 body {
-background: url("/assets/Site/Bodenstown.jpg") no-repeat center center fixed;
+  /* background image black and white pitch*/
+background: url("/assets/Site/backgroundimage2.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -20,7 +21,8 @@ h1, h6 {
 div#container {
     position: relative;
     min-height: 850px;
-    border:2px orange solid;
+    border:2px rgb(75, 125, 90) solid;
+
     /* background-image: url("/assets/Site/bg3.gif"); */
     max-width: 1000px;
     min-width: 750px;
@@ -43,27 +45,31 @@ div#content {
 	padding: 3px;
     margin: 3px 3px 3px 5px;
     /*background: rgb(240, 240, 240);*/
-    background-image: url("/assets/Site/bg3.gif");
+    /*image for catalog*/
+    background-image: url("/assets/Site/bg5.gif");
     border: 1px solid gray;
     min-height: 850px;
     width: 700px;
+    /*image for opacity*/
+    opacity: 0.8;
 }
 div#header,
 div#footer,
 div#menu {
-    background: rgb(20, 20, 20);
+    border:2px rgb(75, 125, 90) solid;
     padding: 3px;
-    border:2px orange solid;
+  /*  border:2px blue solid;*/
     max-width: 994px;
     min-width: 744px;
     margin: auto;
 }
 
 div#header {
-	border:2px orange solid;
+	border:2px rgb(75, 125, 90) solid;
+
  	border-top-left-radius:25px;
  	border-top-right-radius:25px;
-		
+
 }
 
 div#menu {
@@ -73,7 +79,7 @@ div#menu {
 }
 div#header {
     border-bottom: none;
-    background-image: url("/assets/Site/BookHeader.jpg");
+    background-image: url("/assets/Site/Header1.jpg");
     width: 1024px;
     height: 170px;
 }
@@ -85,7 +91,7 @@ div.box {
 	margin: 0px 0px 30px 5px;
 	padding: 5px;
 	height: 260px;
-	border:2px orange solid;
+	border:2px rgb(75, 125, 90) solid;
 	background-image: url("/assets/Site/bg3.gif");
  	border-radius:9px;
  	-moz-border-radius:9px; /* Old Firefox */
@@ -96,7 +102,7 @@ div.searchbox {
 	margin: 0px 0px 30px 5px;
 	padding: 5px;
 	height: 55px;
-	border:2px orange solid;
+	border:2px rgb(75, 125, 90) solid;
 	background-image: url("/assets/Site/bg3.gif");
  	border-radius:9px;
  	-moz-border-radius:9px; /* Old Firefox */
@@ -107,7 +113,7 @@ div.loginbox {
 	margin: 0px 0px 30px 5px;
 	padding: 5px;
 	height: 65px;
-	border:2px orange solid;
+	border:2px rgb(75, 125, 90) solid;
  	border-radius:9px;
  	background-image: url("/assets/Site/bg3.gif");
  	-moz-border-radius:9px; /* Old Firefox */
@@ -115,38 +121,38 @@ div.loginbox {
 }
 
 /* ------------------------- */
- #navbar ul          
+ #navbar ul
  {
-     margin: 0;         
-     padding: 5px;         
-     list-style-type: none;         
-     text-align: left;  
-     font-size: 17px;      
-     background-color: #333;         
- }  
- 
- #navbar ul li           
+     margin: 0;
+     padding: 5px;
+     list-style-type: none;
+     text-align: left;
+     font-size: 17px;
+     background-color: #333;
+ }
+
+ #navbar ul li
  {
      display: inline;
-       
- }  
- 
- #navbar ul li a          
+
+ }
+
+ #navbar ul li a
  {
-     text-decoration: none;         
-     padding: .2em 1em;         
-     color: #fff;         
-     background-color: #333;         
-     }  
-     
-#navbar ul li a:hover          
+     text-decoration: none;
+     padding: .2em 1em;
+     color: #fff;
+     background-color: #333;
+     }
+
+#navbar ul li a:hover
 {
     color: navy;
-    background-color: azure;         
-   	border:0px orange solid;
+    background-color: azure;
+   	border:2px rgb(75, 125, 90) solid;
  	border-radius:9px;
  	-moz-border-radius:9px; /* Old Firefox */
-       
+
 }
 
 .box img {
@@ -180,7 +186,7 @@ div.loginbox {
 	width: 350px;
 	height: 370px;
 	border: 2px black solid;
-	background-color:black;	
+	background-color:black;
 	float:left;
 	margin-left: 10px;
 }
@@ -199,15 +205,15 @@ div.loginbox {
 
 #imageList li {
 	display:inline;
-	
+
 	text-align: left;
 }
 
 #imageList img {
 	margin-right: 5px;
 	width: 50px;
-	height: 50px;	
-	border: 4px silver solid;	
+	height: 50px;
+	border: 4px silver solid;
 }
 
 #largeDisplay {
@@ -261,15 +267,15 @@ div.loginbox {
 	width: 208px;
 	/*height:230px;*/
 	overflow:visible;
-	
-	
+
+
  	border-radius:7px;
  	-moz-border-radius:5px; /* Old Firefox */
 
 }
 
 .catalogImage {
-	
+
 }
 
 .catalogImage img {
@@ -312,7 +318,7 @@ div.loginbox {
 	position: absolute;
 	top: 3px;
 	right: 5px;
-	
+
 }
 
 .adminLinks img {
@@ -441,7 +447,7 @@ div.loginbox {
 }
 
 #BagImage {
-	float:left;	
+	float:left;
 }
 
 #AddClub {
@@ -462,7 +468,7 @@ div.loginbox {
 
 #listAdmin {
 	visibility: hidden;
-	
+
 }
 
 /* ------------- Profile Info Display ---------------- */
@@ -517,7 +523,7 @@ div.loginbox {
 .cart img {
 	border: 0px;
 }
-	
+
 .legend {
 	background-color: thistle;
 }
@@ -689,13 +695,13 @@ div.loginbox {
 				margin: 0 0 0px 0px;
 				width: 490px;
 			}
-			
+
 			.list_carousel img {
 				width: 70px;
 				height: 70px;
 			}
 
-			
+
 			.list_carousel ul {
 				margin: 0;
 				padding: 0;
