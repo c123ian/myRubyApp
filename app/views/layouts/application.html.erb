@@ -5,6 +5,8 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+
+
 </head>
 <body>
 <div id='header'>
@@ -22,9 +24,11 @@
 
     </div>
     <div id='container'>
-        <div id='content'>
 
+        <div id='content'>
+<!--Insert flash messages.-->
             <p class="notice"> <%= flash[:notice] %></p>
+           <p class="alert"><%= flash[:alert] %></p>
             <%= yield %>
         </div>
         <div id='first-column'>
