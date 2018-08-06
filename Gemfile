@@ -6,6 +6,7 @@ git_source(:github) do |repo_name|
 end
 
 
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.1'
 # Use sqlite3 as the database for Active Record
@@ -32,8 +33,9 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7
 
-# Added
-gem 'sdoc', '~> 0.4.0', group: :doc
+# #Devise contains dozens of classes, including, models, controllers, mailers, helpers, hooks,
+#...routes, and views.
+#gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'devise', '~> 4.1', '4.1.1'
 
 # Use Capistrano for deployment
@@ -57,7 +59,7 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 #ADDED
-group :production do
-  gem 'pg'
-  gem 'rails_12factor'
-end
+#group :production do
+#  gem 'pg'
+#  gem 'rails_12factor'
+#end
