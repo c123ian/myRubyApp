@@ -4,22 +4,30 @@ Rails.application.routes.draw do
   get 'site/about'
 
   get 'site/contact'
-  
+
   get '/about' => 'site#about'
-  
+
   get '/contact' => 'site#contact'
-  
+
   get '/Admin' => 'user#admin_login'
-  
+
   get '/logout' => 'user#logout'
-  
+
   get '/cart' => 'cart#index'
-  
+
   get '/cart/clear' => 'cart#clearCart'
-  
+
   get '/cart/:id' => 'cart#add'
+  # allow sign in of customers
+  get '/signedinuserprofile' => 'profiles#signedinuserprofile'
+
 
   resources :items
+
+
+  # You can have the root of your site routed with "root"
+#root 'items#index'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
