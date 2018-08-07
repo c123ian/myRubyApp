@@ -5,10 +5,11 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-group :development, :test do
-  gem 'sqlite3'
-end
+#group :development, :test do
+#  gem 'sqlite3'
+#end
 
+  gem 'sqlite3'
 # Code for HEROKU deployment
 #group :production do
 #  gem 'pg'
@@ -76,10 +77,10 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-group :production do
-  gem 'pg'
-  gem 'rails_12factor'
-end
+#group :production do
+#  gem 'pg'
+#  gem 'rails_12factor'
+#end
 
 #ADDED
 #group :production do
