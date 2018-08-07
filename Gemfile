@@ -5,6 +5,13 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+group :development, :test do # <<<< :development, not devlopment
+  gem 'sqlite3'
+end
+
+group :production do
+  gem 'pg'
+end
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -62,4 +69,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 #group :production do
 #  gem 'pg'
 #  gem 'rails_12factor'
-#end
+# end
