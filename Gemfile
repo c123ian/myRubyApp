@@ -36,7 +36,7 @@ gem 'jbuilder', '~> 2.5'
 # #Devise contains dozens of classes, including, models, controllers, mailers, helpers, hooks,
 #...routes, and views.
 #gem 'sdoc', '~> 0.4.0', group: :doc
-gem 'devise', '~> 4.1', '4.1.1'
+gem 'devise', '~> 4.4.0'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
