@@ -7,7 +7,7 @@
 
 body {
   /* background image black and white pitch*/
-background: url("/assets/Site/backgroundimage2.jpg") no-repeat center center fixed;
+background: url("/Users/cian/myRubyApp2/myRubyApp/app/assets/images/backgroundimage2.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
