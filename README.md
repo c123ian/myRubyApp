@@ -36,7 +36,7 @@ navigate to route /items
 Catalog should be empty
 in terminal run the following command
 
-cp app/assets/backup/development.sqlite3 db/
+cp app/assets/backup/development.pg db/
 
 refresh browser and catalog should have items.
 
@@ -62,7 +62,7 @@ rake db:migrate
 
 run project
 
-cp app/assets/backup/db_with_users/development.sqlite3 db/
+cp app/assets/backup/db_with_users/development.pg db/
 
 login as A@B.C password password
 
