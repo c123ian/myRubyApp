@@ -6,9 +6,10 @@
 } */
 
 body {
-  /* background image black and white pitch "/Users/cian/myRubyApp2/myRubyApp/app/assets/images/backgroundimage2.jpg"*/
+  /* background image black and white pitch "/Users/cian/myRubyApp2/myRubyApp/app/assets/images/
+.jpg"*/
 
-background: url("assets/Site/backgroundimage2.jpg") no-repeat center center fixed;
+background: url("/assets/Site/backgroundimage2.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -80,7 +81,7 @@ div#menu {
 }
 div#header {
     border-bottom: none;
-    background-image: url("/assets/Site/Header1.jpg");
+    background-image: url("/assets/Site/");
     width: 1024px;
     height: 170px;
 }
