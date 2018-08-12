@@ -9,7 +9,7 @@ end
 #  gem 'sqlite3'
 #end
 
-  gem 'sqlite3'
+
 # Code for HEROKU deployment
 #group :production do
 #  gem 'pg'

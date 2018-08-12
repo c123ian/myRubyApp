@@ -89,12 +89,7 @@ GEM
     nokogiri (1.8.4)
       mini_portile2 (~> 2.3.0)
     orm_adapter (0.5.0)
-<<<<<<< HEAD
-<<<<<<< HEAD
-    pg (1.0.0)
-=======
-    pg (0.19.0)
->>>>>>> attempt Gemfile to allow Heroku
+  
 =======
     pg (1.0.0)
 >>>>>>> testing images
