@@ -7,6 +7,9 @@ require 'devise'
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
+# assets should compile without your app attempting to connect to the database
+config.assets.initialize_on_precompile = false
+
 module Golfstore
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.
