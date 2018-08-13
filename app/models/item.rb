@@ -1,5 +1,5 @@
 class Item < ApplicationRecord
   def self.search(search)
-    where("Catalog LIKE?", "%#{search}%")
+    where("title LIKE?", "%#{search}%")
 end
 end
