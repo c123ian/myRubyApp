@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
  <!--Search form for customers - submit search term -->
-<%= form_tag(customers_path, :method => "get", id: "search-form") do%>
+<%= form_tag(items_path, :method => "get", id: "search-form") do%>
 <%= text_field_tag :search, params[:search], placeholder: "Search For Items" %>
 <%= submit_tag "Search" %>
 <% end %>
