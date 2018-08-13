@@ -2,3 +2,11 @@
 <p>Find me in app/views/site/about.html.erb</p>
 
 <p> Football club founded in 1920... </p>
+<p id="notice"><% notice %></p>
+
+<!--Search form for items - submit search term -->
+<!--pg::SQLException: no such column: Catalog: SELECT "items".* FROM "items" WHERE (Catalog LIKE'%Jacket%') ORDER BY "items"."created_at" DESC -->
+<%= form_tag(items_path, :method => "get", id: "search-form") do%>
+<%= text_field_tag :search, params[:search], placeholder: "Search by Catalog" %>
+<%= submit_tag "Search" %>
+<% end %>

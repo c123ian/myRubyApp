@@ -1,9 +1,9 @@
 <p id="notice"><% notice %></p>
 
 <!--Search form for items - submit search term -->
-<!--SQLite3::SQLException: no such column: Catalog: SELECT "items".* FROM "items" WHERE (Catalog LIKE'%Jacket%') ORDER BY "items"."created_at" DESC -->
+<!--pg::SQLException: no such column: Catalog: SELECT "items".* FROM "items" WHERE (Catalog LIKE'%Jacket%') ORDER BY "items"."created_at" DESC -->
 <%= form_tag(items_path, :method => "get", id: "search-form") do%>
-<%= text_field_tag :search, params[:search], placeholder: "Search by Item" %>
+<%= text_field_tag :search, params[:search], placeholder: "Search by Catalog" %>
 <%= submit_tag "Search" %>
 <% end %>
 
