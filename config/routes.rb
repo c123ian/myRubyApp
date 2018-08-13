@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   devise_for :users
   resources :customers
   resources :items
-  
+
   get 'cart/index'
 
   get 'site/about'
@@ -14,10 +14,13 @@ Rails.application.routes.draw do
   get '/contact' => 'site#contact'
 
   get '/Admin' => 'user#admin_login'
+  get '/Profile' =>  'user#profileInfo'
 
   get '/logout' => 'user#logout'
 
   get '/cart' => 'cart#index'
+
+  get '/cart/index' => 'user#cart'
 
   get '/cart/clear' => 'cart#clearCart'
 
