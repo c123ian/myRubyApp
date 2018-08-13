@@ -28,6 +28,9 @@ Rails.application.routes.draw do
   # allow sign in of customers
   get '/signedinuserprofile' => 'profiles#signedinuserprofile'
 
+   get 'customers/:id' => 'user#customers'
+
+
 
 
 
